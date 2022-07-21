@@ -3,10 +3,7 @@
   height: 150px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  animation-name: logo;
-  animation-duration: 5s;
-  animation-iteration-count: infinite; }
+  justify-content: start; }
 
 .menu ul {
   text-decoration: none; }
@@ -104,14 +101,9 @@ body {
   align-items: center;
   padding: 10px;
   background-image: linear-gradient(to bottom, pink, grey); }
-  .section1 img:hover {
-    width: 430px;
-    height: 430px;
-    margin: 30px; }
-    .section1 img:hover .clientes1 {
-      width: 400px;
-      height: 400px;
-      transition: all 2s; }
+  .section1 .clientes1 {
+    width: 400px;
+    height: 420px; }
 
 .section2 {
   grid-area: section2;
@@ -119,14 +111,9 @@ body {
   align-items: center;
   padding: 10px;
   background-image: linear-gradient(to bottom, pink, grey); }
-  .section2 img:hover {
-    width: 430px;
-    height: 430px;
-    margin: 30px; }
-    .section2 img:hover .clientes2 {
-      width: 400px;
-      height: 350px;
-      transition: all 2s; }
+  .section2 .clientes2 {
+    width: 400px;
+    height: 420px; }
 
 footer {
   background-color: darksalmon;

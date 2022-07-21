@@ -3,11 +3,7 @@
     height: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-
-    animation-name: logo;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+    justify-content: start;;
 }
 
 
@@ -154,17 +150,12 @@ body {
      align-items: center;
      padding: 10px;
      background-image: linear-gradient(to bottom, pink, grey);
-     img:hover   {
-        width: 430px;
-        height: 430px;
-        margin: 30px;
     .clientes1  {
         width: 400px;
-        height: 400px;
-        transition: all 2s;
+        height: 420px;
     }
 }
-}
+
 
  .section2   {
     grid-area: section2;
@@ -172,17 +163,12 @@ body {
     align-items: center;
     padding: 10px;
     background-image: linear-gradient(to bottom, pink, grey);
-    img:hover   {
-        width: 430px;
-        height: 430px;
-        margin: 30px;
     .clientes2  {
         width: 400px;
-        height: 350px;
-        transition: all 2s;
+        height: 420px;
     }
 }
-}
+
 footer {
     background-color: darksalmon;
     grid-area: footer;
