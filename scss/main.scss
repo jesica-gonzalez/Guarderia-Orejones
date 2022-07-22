@@ -48,12 +48,20 @@ main   {
  
  .clientes1  {
     width: auto;
-    height: 100px;
+    height: 200px;
 }
 
 .clientes2  {
     width: auto;
-    height: 100px;
+    height: 200px;
+}
+
+.carousel-inner {
+img {
+    max-width: 300px;
+    min-height: 300px;
+    align-items: center;
+}
 }
 
 footer {
