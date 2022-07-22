@@ -1,25 +1,15 @@
-.logo {
-  width: 150px;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: start; }
-
-.menu ul {
-  text-decoration: none; }
-  .menu ul li {
-    background-color: lightcoral;
-    text-decoration: none;
-    list-style-type: none;
-    display: inline-block;
-    padding: 20px; }
-    .menu ul li .submenu {
-      display: none; }
-    .menu ul li:hover {
-      background-color: dimgrey; }
+body {
+  padding: 10px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 0.45fr 1fr 1fr;
+  grid-template-areas: "header header" "main main" "section1 section2" "footer footer";
+  grid-row-gap: 10px;
+  grid-column-gap: 10px; }
 
 header {
-  background-color: darksalmon;
+  background-color: #B5838D;
   grid-area: header; }
 
 main {
@@ -27,17 +17,46 @@ main {
   padding: 10px;
   align-items: center;
   justify-items: center;
-  background-image: radial-gradient(lightcoral, grey); }
+  background-color: #FFCDB2; }
 
-body {
+.section1 {
+  grid-area: section1;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr 0.45fr 1fr;
-  grid-template-areas: "header header" "main main" "section1 section2" "footer footer";
-  grid-row-gap: 10px;
-  grid-column-gap: 10px; }
+  background-image: linear-gradient(to bottom, #FFCDB2, grey); }
+
+.section2 {
+  grid-area: section2;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-image: linear-gradient(to bottom, #FFCDB2, grey); }
+
+.clientes1 {
+  width: auto;
+  height: 100px; }
+
+.clientes2 {
+  width: auto;
+  height: 100px; }
+
+footer {
+  background-color: #B5838D;
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.enlaces {
+  list-style-type: none;
+  text-align: left;
+  padding: 20px; }
+
+.logo {
+  width: 150px;
+  height: 150px; }
 
 @keyframes logo {
   10% {
@@ -47,78 +66,31 @@ body {
   100% {
     transform: translateX(35px); } }
 
-.menu li {
-  background-color: lightcoral;
-  text-decoration: none;
-  list-style-type: none;
-  display: inline-block;
-  padding: 20px; }
-  .menu li .submenu {
-    display: none; }
-
 .redesMenu {
   text-align: right; }
 
 .redesSociales {
   text-align: right; }
 
-.enlaces {
-  list-style-type: none;
-  text-align: left;
-  padding: 20px; }
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 320px) {
   .body {
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
     grid-template-areas: "header" "main" "section1" "footer"; }
   .objetivo {
     flex-direction: column;
     flex-wrap: wrap; }
   .section1 {
     margin-bottom: 20px;
-    margin-right: none; }
-  .footer {
-    flex-direction: column;
-    justify-content: space-around; } }
+    margin-right: none; } }
 
 @media screen and (max-width: 768px) {
   .body {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 0.5fr);
+    grid-template-rows: repeat(4, 0.5fr);
     grid-template-areas: "header  header" "main  main" "section1 section2" "footer footer"; }
   .header {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    grid-area: header; }
-  .footer {
-    grid-area: footer;
-    display: flex; } }
-
-.section1 {
-  grid-area: section1;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  background-image: linear-gradient(to bottom, pink, grey); }
-  .section1 .clientes1 {
-    width: 400px;
-    height: 420px; }
-
-.section2 {
-  grid-area: section2;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  background-image: linear-gradient(to bottom, pink, grey); }
-  .section2 .clientes2 {
-    width: 400px;
-    height: 420px; }
-
-footer {
-  background-color: darksalmon;
-  grid-area: footer; }
-  footer .mapa {
-    transform: translate(200px, 40px); }
-  footer .enlaces {
-    transform: translateY(-300px); }
+    grid-area: header; } }
