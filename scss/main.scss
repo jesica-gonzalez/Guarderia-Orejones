@@ -35,7 +35,10 @@ main   {
      justify-content: center;
      align-items: center;
      padding: 10px;
-     background-image: linear-gradient(to bottom,$colorSecundario, grey);
+     background-image: linear-gradient(to bottom,$colorSecundario, #B5838D);
+        ul{
+        list-style-type: none;
+     }
  }
  
  .section2   {
@@ -43,7 +46,7 @@ main   {
      justify-content: center;
      align-items: center;
      padding: 10px;
-     background-image: linear-gradient(to bottom,$colorSecundario, grey);
+     background-image: linear-gradient(to bottom,$colorSecundario, #B5838D);
  }
  
  .clientes1  {
@@ -61,6 +64,7 @@ img {
     max-width: 300px;
     min-height: 300px;
     align-items: center;
+    justify-content: center;
 }
 }
 .clientes3 {
@@ -81,6 +85,7 @@ img {
     height: 200px;
 }
 
+
 footer {
     background-color: $colorPrincipal;
     grid-area: footer;
@@ -95,11 +100,6 @@ footer {
     list-style-type: none;
     text-align: left;
     padding: 20px;
-}
-
-.logo  {
-    width: 150px;
-    height: 150px;
 }
 
 @keyframes  logo {
